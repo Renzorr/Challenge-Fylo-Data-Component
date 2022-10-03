@@ -111,6 +111,11 @@ body {
   gap: 30px;
 }
 
+.fylo-logo{
+  cursor: pointer;
+  transition: .3s;
+}
+
 .icons {
   display: flex;
   align-items: center;
@@ -128,10 +133,6 @@ body {
   transition: 0.3s;
 }
 
-.icons a:hover {
-  transform: translateY(-10px);
-}
-
 .storage {
   max-width: 550px;
   width: 550px;
@@ -145,7 +146,12 @@ body {
   position: relative;
 }
 
-.storage p span {
+.storage h1 {
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+.storage h1 span {
   font-weight: bold;
 }
 
@@ -193,7 +199,7 @@ body {
   justify-content: space-between;
 }
 
-.alert-storage{
+.alert-storage {
   position: absolute;
   right: 5%;
   top: 0;
@@ -216,22 +222,35 @@ body {
   right: 0px;
 }
 
-.alert-storage span{
+.alert-storage span {
   font-size: 32px;
   margin-inline-end: 5px;
 }
 
-@media (max-width: 750px){
+/* Hover Effects */
 
+.icons a:hover {
+  transform: translateY(-10px);
+}
+
+.fylo-logo:hover{
+  transform: scale(1.1);
+}
+
+/* Media Queries */
+
+@media (max-width: 750px) {
   body {
     background: url(/images/bg-mobile.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: var(--very-Dark-Blue);
   }
 
-  main{
+  main {
     width: auto;
   }
+
   .fylo-container {
     width: 320px;
   }
@@ -245,7 +264,7 @@ body {
     display: none;
   }
 
-  .alert-storage{
+  .alert-storage {
     position: absolute;
     right: 50%;
     bottom: 0;
