@@ -80,7 +80,7 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: url(/images/bg-desktop.png);
+  background: url(images/bg-desktop.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
@@ -241,7 +241,7 @@ body {
 
 @media (max-width: 750px) {
   body {
-    background: url(/images/bg-mobile.png);
+    background: url(images/bg-mobile.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: var(--very-Dark-Blue);
